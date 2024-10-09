@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img
+        src="https://villa-motos.vendefacil.com.br/_core/_uploads/20/2021/06/0939180621jjafa2egjg_thumb.jpg"
+        class="me-2"
+        height="40"
+        alt=""
+        loading="lazy"
+      />
+      <small>Villa Motos</small>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="noListNav.toggle()"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <div
+      class="collapse navbar-collapse"
+      id="navbarNavAltMarkup"
+      mdbCollapse
+      #noListNav="mdbCollapse"
+    >
+      <div class="navbar-nav ms-auto"> <!-- Adicione ms-auto aqui -->
+        <a class="nav-link title" aria-current="page" href="#">Veiculos</a>
+        <a class="nav-link title" href="#">Sobre nós</a>
+        <a class="nav-link title" href="#">Endereço</a>
+      </div>
+    </div>
+  </div>
+</nav>

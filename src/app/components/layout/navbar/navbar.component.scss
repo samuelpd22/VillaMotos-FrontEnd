@@ -1,0 +1,21 @@
+
+
+.custom-navbar {
+    background-color: rgb(255, 255, 255);
+    height: 68px ;
+}
+.title {
+    font-size: 18px;
+    display: flex;
+    text-align: end;
+}
+nav{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.nav-link{
+    font-size: 16px;
+}
+a:hover{
+    color: hsl(0, 71%, 57%);
+}

@@ -1,0 +1,58 @@
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <nav class="navbar navbar-expand-lg navbar-dark mt-3 mb-5 shadow p-2" style="background-color: hsl(0, 71%, 57%); border-radius: 10px;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" (click)="basicNav.toggle()" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" mdbCollapse #basicNav="mdbCollapse">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-center"> <!-- Adicionei mx-auto e justify-content-center -->
+              <li class="nav-item active">
+                <button type="button" class="btn btn-tertiary text-white" (click)="listAll()" mdbRipple>Todos</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-tertiary text-white" (click)="listMarca('YAMAHA')" mdbRipple>YAMAHA</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-tertiary text-white" (click)="listMarca('HONDA')" mdbRipple>HONDA</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-tertiary text-white" (click)="listMarca('KAWASAKI')" mdbRipple>KAWASAKI</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section>
+        <div class="text-center">
+          <div class="row g-3 d-flex align-items-stretch"> <!-- Adicionando d-flex e align-items-stretch -->
+            @for (carro of carros; track $index) {
+              <div class="col-md-6 col-lg-4">
+                <div class="card">
+                  <img src="{{carro.image[0]}}" class="card-img-top" alt="{{carro.nome}}"/>
+                  <div class="card-body">
+                    <h5 class="card-title"><strong>Veículo: </strong>{{carro.nome}}</h5>
+                  </div>
+                  <ul class="list-group list-group-light list-group-small">
+                    <li class="list-group-item px-4"><strong>Cilindrada:</strong>  {{carro.cilindrada}}</li>
+                    <li class="list-group-item px-4"><strong>Ano:</strong> {{carro.ano}}</li>
+                    <li class="list-group-item px-4"><strong>Marca:</strong> {{carro.marca}}</li>
+                  </ul>
+                  <div class="card-body">
+                    <button type="button" class="btn btn-details btn-danger btn-rounded" (click)="verDetalhes(carro)" mdbRipple>Detalhes</button>
+                    <button type="button" class="btn btn-adqr btn-primary btn-rounded" mdbRipple>Adquirir</button>
+
+                  </div>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+        <br>
+      </section>
+    </div>
+  </div>
+</div>

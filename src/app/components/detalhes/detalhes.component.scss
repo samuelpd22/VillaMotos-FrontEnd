@@ -1,0 +1,103 @@
+.imgDetails{
+   max-width: 600px;
+   max-height: 600px;
+   
+  
+}
+p{
+    padding-top: 6px;
+    font-size: 20px;
+    text-align: inherit;
+      
+}
+.h5-ctt{
+   color: hsl(0, 71%, 57%);
+}
+h1{
+    font-size: 14px;
+}
+main{
+
+    background-color: rgba(68, 67, 67, 0.034);
+    
+}
+.int{
+    color: rgba(255, 0, 0, 0.103);
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    text-align: justify;
+}
+.card-ctt{
+    background-color: rgba(65, 58, 58, 0);
+    border-radius: 20px;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Cor do WhatsApp */
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 29px;
+    text-align: center;
+    z-index: 1000;
+    transition: background-color 0.3s;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #128C7E; /* Cor do WhatsApp ao passar o mouse */
+  }
+
+  .social-button {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    background-color: #25D366; /* Cor do WhatsApp */
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 29px;
+    text-align: center;
+    z-index: 1000;
+    transition: background-color 0.3s;
+  }
+  
+ 
+  
+  .whatsapp:hover {
+    background-color: #128C7E; /* Cor do WhatsApp ao passar o mouse */
+  }
+  
+  .instagram {
+    background-color: #C13584; /* Cor do Instagram */
+  }
+  
+  .instagram:hover {
+    background-color: #E1306C; /* Cor do Instagram ao passar o mouse */
+  }
+  
+.mt-0{
+    background-color: rgba(0, 0, 0, 0);
+}
+.card{
+    background-color: #4f50500a;
+}
+
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /* Ajuste a altura do movimento */
+    }
+}
+
+.social-button,
+.whatsapp-button {
+    animation: wave 1s infinite; /* Aplica a animação */
+}

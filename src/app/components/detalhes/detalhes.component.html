@@ -1,0 +1,95 @@
+<br>
+<div class="container">
+  <!--MODELO PARA TELA DE LOGIN, SÓ ALTERAR --->
+
+  <div class="row">
+    <div class="col-lg-2"></div> <!-- Coluna lateral esquerda menor -->
+
+    <div class="col-lg-8 centralizar topo"> <!-- Aumentei a largura da coluna central -->
+      <!--Centralizando o container  -->
+      <div class="card">
+        <!--Quadro branco, por trás do formulario "login" -->
+        <div class="card-body text-center"> <!-- Adicionei text-center aqui -->
+          <!--Main layout-->
+          <main class="mt-0 mb-5">
+            <br>
+            <div class="container">
+              <!--Grid row-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-md-0 mb-4">
+                  <!--Section: Post data-mdb-->
+                  <section class="border-bottom mb-4">
+                    <img *ngIf="carro && carro.image && carro.image.length > 0" 
+                         [src]="carro.image[currentImageIndex]" 
+                         class="img-fluid imgDetails shadow-2-strong rounded mb-4" 
+                         alt="{{ carro.nome }}" />
+                    <br>
+                    <p class="badge rounded-pill badge-danger"></p>
+                    <p class="badge rounded-pill badge-danger"><strong>Marca: </strong>{{ carro.marca }}</p>
+
+                    <!--CARROS -->
+                    <div class="row align-items-center mb-4">
+                      <div *ngIf="carro" class="col-lg-12 mb-3"> <!-- Removi text-center e ajuste de m-lg-0 -->
+                        <p><strong>Veículo: </strong><u>{{ carro.nome }}</u></p>
+                        <p><strong>Cilindrada: </strong>{{ carro.cilindrada }}</p>
+                        <p><strong>Ano: </strong>{{ carro.ano }}</p>
+                        <p><strong>Valor: </strong>{{ carro.valor }}</p>
+                        <br>
+                      </div>
+                    </div>
+                  </section>
+                  <!--Section: Post data-mdb-->
+
+                  <!--Section: Text-->
+                  <section>
+                    <p>
+                      - Passamos cartão de crédito em até 12x com acréscimo da máquina! <br>
+                      - Financiamos em até 48x! 
+                      
+                      Para mais informações favor chamar no direct ou no nosso WhatsApp! 
+                    </p>
+                  </section>
+                  <!--Section: Text-->
+
+                  <!--Section: Share buttons-->
+                  <section class="text-center border-top border-bottom py-4 mb-4">
+                    <p><strong>Compartilhe com seus amigos:</strong></p>
+                    <button type="button" class="btn btn-primary me-1" data-mdb-ripple-init style="background-color: #3b5998;">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary me-1" data-mdb-ripple-init style="background-color: #55acee;">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary me-1" data-mdb-ripple-init style="background-color: #0082ca;">
+                      <i class="fab fa-linkedin"></i>
+                    </button>
+                    
+                  </section>
+                  <!--Section: Share buttons-->
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </div>
+          </main>
+          <!--Main layout-->
+
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2"></div> <!-- Coluna lateral direita menor -->
+  </div>
+</div>
+
+
+<a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-button">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<br>
+
+<a href="https://instagram.com/seu_perfil" target="_blank" class="social-button instagram">
+  <i class="fab fa-instagram"></i>
+</a>
