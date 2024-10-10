@@ -9,11 +9,23 @@
     border-radius: 20px;
 }
 .card{
-    max-width: 500px;
+    max-width: 400px;
     min-width: 100px;
     display: flex;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Suaviza a transformação e a sombra
+
 }
 button{
     margin-right: 14px;
     background-color: hsl(0, 71%, 57%);
 }
+.card-img-top{
+    max-width: 100vw;
+
+    object-fit: fill; /* A imagem será redimensionada para caber dentro do contêiner */
+}
+
+.card:hover {
+    transform: scale(1.05); // Aumenta o tamanho do card
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); // Adiciona uma sombra ao card
+  }

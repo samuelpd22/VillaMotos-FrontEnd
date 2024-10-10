@@ -10,7 +10,7 @@ import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
 @Component({
   selector: 'app-detalhes',
   standalone: true,
-  imports: [CommonModule,MdbFormsModule],
+  imports: [CommonModule, MdbFormsModule, ],
   templateUrl: './detalhes.component.html',
   styleUrls: ['./detalhes.component.scss'] // Corrigido para styleUrls
 })

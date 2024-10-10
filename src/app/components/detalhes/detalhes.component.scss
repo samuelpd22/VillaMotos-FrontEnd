@@ -41,7 +41,7 @@ main{
     border-radius: 50%;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    font-size: 29px;
+    font-size: 14px;
     text-align: center;
     z-index: 1000;
     transition: background-color 0.3s;
@@ -53,14 +53,14 @@ main{
 
   .social-button {
     position: fixed;
-    bottom: 100px;
-    right: 24px;
+    bottom: 20px;
+    right: 60px;
     background-color: #25D366; /* Cor do WhatsApp */
     color: white;
     border-radius: 50%;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    font-size: 29px;
+    font-size: 14px;
     text-align: center;
     z-index: 1000;
     transition: background-color 0.3s;
@@ -100,4 +100,8 @@ main{
 .social-button,
 .whatsapp-button {
     animation: wave 1s infinite; /* Aplica a animação */
+}
+.container{
+  margin-top: 2px;
+ 
 }

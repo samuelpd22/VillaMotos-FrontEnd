@@ -3,6 +3,8 @@ import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
 import { Carros } from '../../../models/Carros';
 import { CarrosService } from '../../../services/carros.service';
 import { Router } from '@angular/router';
+import { Nav2Component } from "../../nav2/nav2.component";
+
 
 
 
@@ -10,7 +12,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-centro',
   standalone: true,
-  imports: [MdbCollapseModule,],
+  imports: [MdbCollapseModule, Nav2Component,],
   templateUrl: './centro.component.html',
   styleUrl: './centro.component.scss'
 })
@@ -101,6 +103,7 @@ export class CentroComponent {
 
   verDetalhes(carro: Carros) {
     this.router.navigate(['/detalhes', carro.id]);
+    window.scrollTo(0, 0); // Rola para o topo após a navegação
     console.log('ID do carro:', carro.id); // Adicione esta linha
 
   }
